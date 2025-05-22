@@ -1,0 +1,139 @@
+/* Base Styles */
+body {
+  font-family: 'Comic Neue', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  margin: 0;
+  padding: 0;
+  color: #4b4b4b;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #fff8f0;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 3px dashed #ffb6b9;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #ff6f91;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+
+/* Questions */
+.question {
+  background: #ffeef2;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #ffd3dc;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.question:hover {
+  background: #fff3f7;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d85b78;
+}
+
+/* Radio Buttons & Labels */
+label {
+  display: block;
+  margin: 10px 0;
+  padding: 8px 12px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ffe0e6;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+label:hover {
+  background-color: #fff5f7;
+  transform: scale(1.02);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Submit Button */
+button {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0;
+  padding: 12px 30px;
+  font-size: 16px;
+  background: #ffb6b9;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(255, 182, 185, 0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #ff6f91;
+  transform: scale(1.05);
+}
+
+/* Result Box */
+.result {
+  margin-top: 40px;
+  background: #fff0f3;
+  border: 2px solid #ffccd5;
+  border-radius: 15px;
+  padding: 25px;
+  color: #b9375e;
+  font-size: 18px;
+}
+
+ul {
+  margin-top: 15px;
+  padding-left: 25px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  list-style-type: "🌸 ";
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .question {
+    padding: 15px;
+  }
+
+  label {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .result {
+    font-size: 16px;
+  }
+}
